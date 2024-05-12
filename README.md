@@ -13,27 +13,17 @@ Antes de começar, é necessário ter os seguintes itens instalados e configurad
 
 ## Como Usar
 
-1. Clone este repositório para o seu ambiente local: 
+1. Clone este repositório para o seu ambiente local:  git clone https://github.com/wandersonvinhal/terraform-aws-ec2.git
 
-git clone https://github.com/wandersonvinhal/terraform-aws-ec2.git
+2. Navegue até o diretório clonado:  cd terraform-aws-ec2
 
-2. Navegue até o diretório clonado: 
+3. Inicialize o diretório do Terraform para baixar os plugins necessários: terraform init
 
-cd terraform-aws-ec2
+4. Personalize as configurações conforme necessário no arquivo `terraform.tfvars`. Este arquivo contém as variáveis que podem ser ajustadas, como o tipo de instância, a região da AWS. Além disso, é necessário personalizar o arquivo `providers.tf` com as suas credenciais da AWS antes de executar o Terraform. Certifique-se de adicionar suas credenciais de acesso da AWS no arquivo `providers.tf`.
 
-3. Inicialize o diretório do Terraform para baixar os plugins necessários: 
+5. Visualize as alterações planejadas antes de aplicá-las: terraform plan
 
-terraform init
-
-4. Personalize as configurações conforme necessário no arquivo `terraform.tfvars`. Este arquivo contém as variáveis que podem ser ajustadas, como o tipo de instância, a região da AWS, etc.
-
-5. Visualize as alterações planejadas antes de aplicá-las: 
-
-terraform plan
-
-6. Se tudo estiver correto, aplique as alterações para criar as instâncias EC2: 
-
-terraform apply
+6. Se tudo estiver correto, aplique as alterações para criar as instâncias EC2: terraform apply
 
 7. Após a conclusão, você verá os detalhes das instâncias criadas. Você pode acessar essas instâncias usando o IP público fornecido e a chave SSH que você gerou anteriormente.
 
@@ -42,7 +32,6 @@ terraform apply
 9. Um script de instalação do Apache será executado automaticamente nas instâncias, configurando um servidor web.
 
 10. Para destruir as instâncias EC2 e todos os recursos associados, execute: terraform destroy
-
 
 ## Estrutura do Projeto
 
