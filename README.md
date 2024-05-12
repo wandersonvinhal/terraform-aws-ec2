@@ -19,7 +19,7 @@ git clone https://github.com/wandersonvinhal/terraform-aws-ec2.git
 
 2. Navegue até o diretório clonado: 
 
-cd terraform-ec2
+cd terraform-aws-ec2
 
 3. Inicialize o diretório do Terraform para baixar os plugins necessários: 
 
