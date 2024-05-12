@@ -13,17 +13,27 @@ Antes de começar, é necessário ter os seguintes itens instalados e configurad
 
 ## Como Usar
 
-1. Clone este repositório para o seu ambiente local: git clone https://github.com/wandersonvinhal/terraform-aws-ec2.git
+1. Clone este repositório para o seu ambiente local: 
 
-2. Navegue até o diretório clonado: cd terraform-ec2
+git clone https://github.com/wandersonvinhal/terraform-aws-ec2.git
 
-3. Inicialize o diretório do Terraform para baixar os plugins necessários: terraform init
+2. Navegue até o diretório clonado: 
+
+cd terraform-ec2
+
+3. Inicialize o diretório do Terraform para baixar os plugins necessários: 
+
+terraform init
 
 4. Personalize as configurações conforme necessário no arquivo `terraform.tfvars`. Este arquivo contém as variáveis que podem ser ajustadas, como o tipo de instância, a região da AWS, etc.
 
-5. Visualize as alterações planejadas antes de aplicá-las: terraform plan
+5. Visualize as alterações planejadas antes de aplicá-las: 
 
-6. Se tudo estiver correto, aplique as alterações para criar as instâncias EC2: terraform apply
+terraform plan
+
+6. Se tudo estiver correto, aplique as alterações para criar as instâncias EC2: 
+
+terraform apply
 
 7. Após a conclusão, você verá os detalhes das instâncias criadas. Você pode acessar essas instâncias usando o IP público fornecido e a chave SSH que você gerou anteriormente.
 
